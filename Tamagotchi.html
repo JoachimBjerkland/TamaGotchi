@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TamaGotchi</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        #gamearea-canvas {
+            background: #000;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>TamaGotchi</p>
+    </header>
+    <section>
+        <canvas id="gamearea"></canvas>
+    </section>
+    <figure>
+        <img src="Robot.png" alt="Trulli" style="width:100%">
+        <figcaption>Robot</figcaption>
+    </figure>
+    <figure>
+        <img src="Zombie.png" alt="Trulli" style="width:100%">
+        <figcaption>Frankenstein</figcaption>
+    </figure>
+    <button onClick="playGame()" id="start">Start Game</button>
+
+    <script>
+        const canvas = document.getElementById("gamearea-canvas")
+        canvas.width = 800
+        canvas.height = 600
+        const ctx = canvas.getContext("2d")
+
+
+        function playGame() {
+            playerLoaded = true
+            enemyLoaded = true
+            document.getElementById("start").style.display = "none";
+
+            drawCharacters()
+            renderGame()
+        }
+        //Kilde: catchaliens deleksamen 3.
+    </script>
+</body>
+</html>

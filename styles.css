@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,300&display=swap'); 
+
+body {
+    background-color: #000;
+    background-image: url("Halloween.jpg");
+    background-size: cover;
+    color: #0033ff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+figure {
+    overflow: auto;
+  }
+  
+  figure img {
+    float: left;
+  }
+
+header {
+    font-weight: 500;
+    font-size: 2rem;
+}
+/*Kilde: Catchaliens*/
